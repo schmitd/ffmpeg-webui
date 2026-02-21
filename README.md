@@ -5,7 +5,7 @@ A simple SPA that converts/optimizes multiple images in-browser using `@ffmpeg/f
 ## Tech
 
 - Vite SPA (TypeScript, no framework)
-- Bun package manager/runtime
+- Bun package manager
 - FFmpeg WASM for client-side image conversion
 - JSZip for optional "download all" output
 
@@ -40,7 +40,7 @@ This repo includes `railway.json` with:
 - build: `bun install --frozen-lockfile && bun run build`
 - start: `bun run start`
 
-`start` runs `vite preview` on `$PORT` for Railway.
+`start` runs a static file server for `dist/` on `$PORT`.
 
 ### Deploy steps
 
